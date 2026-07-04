@@ -6,7 +6,7 @@
     <title>عيد ميلاد سعيد! 🎉</title>
     <style>
         body {
-            background: linear-gradient(135deg, #fed6e3 0%, #a8c1ef 100%);
+            background: linear-gradient(135deg, #ffe5ec 0%, #ffb3c6 100%);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
             color: #4a4a4a;
@@ -15,47 +15,93 @@
             overflow-x: hidden;
         }
         .card {
-            background: rgba(255, 255, 255, 0.9);
-            max-width: 500px;
+            background: rgba(255, 255, 255, 0.92);
+            max-width: 550px;
             margin: auto;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px 30px;
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(255, 75, 114, 0.15);
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
         h1 {
             color: #ff4b72;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            animation: bounce 2s infinite;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            animation: pulse 2s infinite;
         }
         p {
             font-size: 1.3rem;
-            line-height: 1.6;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .highlight {
+            color: #d9385c;
+            font-weight: bold;
         }
         .cake {
-            font-size: 4rem;
-            margin: 20px 0;
+            font-size: 4.5rem;
+            margin-bottom: 10px;
+            display: block;
+            animation: float 3s ease-in-out infinite;
         }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
+        .heart {
+            color: #ff4b72;
+            font-size: 1.5rem;
+        }
+        /* تصميم الزرار الذهبي */
+        .btn-music {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffb703, #fb8500);
+            color: white;
+            text-decoration: none;
+            padding: 14px 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(251, 133, 0, 0.4);
+            transition: all 0.3s ease;
+            margin-top: 25px;
+        }
+        .btn-music:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(251, 133, 0, 0.6);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="cake">🎂✨🎉🎈</div>
-        <h1>كل سنة وأنت طيب يا حبيبي!</h1>
+        <span class="cake">🎂✨💛</span>
         
-        <!-- كل سنة وإنت مش مجرد حد عادي في حياتي… إنت الاستثناء اللي ملوش تفسير ❤️
- انهارده ، نفسي أقولك إني مش بس بحتفل بعيد ميلادك، أنا كمان بحتفل بإنك دخلت حياتي وخليتها أحلى وألعب وأجمل.
-فيك حاجة كده بتخليني أبتسم من غير سبب… ويمكن أحيانًا أتوتر شوية كأنك عارف تأثيرك عليّا 😉
-كل سنة وإنت قريب مني أكتر، وكل سنة وإحساسك بيا يزيد،  😌
-عيد ميلاد سعيد يا أجمل “مغامرة” حصلتلي 💛 -->
+        <h1>كل سنة وإنت مش مجرد حد عادي في حياتي… ✨</h1>
         
-        <p>❤️ Smsma ❤️</p>
+        <p>إنت الاستثناء اللي ملوش تفسير ❤️</p>
+        
+        <p>في عيد ميلادك، مش بس بحتفل بيه، أنا كمان بحتفل بإنك دخلت حياتي وخليتها أحلى وأجمل.</p>
+        
+        <p>فيك حاجة كده بتخليني أبتسم من غير سبب… ويمكن أحيانًا أتوتر شوية كأنك عارف تأثيرك عليّا 😉</p>
+        
+        <p>كل سنة وإنت قريب مني أكتر، وكل سنة وإحساسك بيا يزيد،</p>
+        
+        <p class="highlight">عيد ميلاد سعيد يا أجمل “مغامرة” حصلتلي 💛</p>
+        
+        <!-- زرار الأغنية المباشر -->
+        <a href="https://www.youtube.com/watch?v=wNut8QshEx0&list=RDwNut8QshEx0&start_radio=1" target="_blank" class="btn-music">🎵 اسمع الأغنية دي وأنت بتقرأ 🎵</a>
+        
+        <p class="heart" style="margin-top: 25px;">❤️✨❤️</p>
     </div>
 
 </body>
